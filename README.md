@@ -6,6 +6,7 @@ Just run:
 ```bash
 jfind FILE_NAME SEARCH_TERM
 ```
+This will return the locations of all matches that contain the search term (case insensitive). Exact matches will be colored if your terminal supports it.
 
 For example:
 ```bash
