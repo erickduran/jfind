@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='jfind',
-    version='0.0.1',
+    version='0.0.2',
     author='Erick Durán',
     author_email='me@erickduran.com',
     description=('A simple JSON search script.'),

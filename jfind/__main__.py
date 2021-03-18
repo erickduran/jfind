@@ -12,10 +12,10 @@ found_at = []
 def __search(search_term, item, parent):
 	if isinstance(item, dict):
 		for key in item.keys():
-			search(search_term, item[key], parent + [key])
+			__search(search_term, item[key], parent + [key])
 	elif isinstance(item, list):
 		for i, list_item in enumerate(item):
-			search(search_term, list_item, parent + [i])
+			__search(search_term, list_item, parent + [i])
 	else:
 		item = str(item)
 		if search_term.lower() in item.lower():
